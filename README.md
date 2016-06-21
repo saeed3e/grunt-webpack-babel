@@ -58,4 +58,4 @@ webpack: {
   
 
 ## License
-Licensed under the MIT license.
+MIT license.
