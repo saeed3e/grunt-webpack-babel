@@ -27,8 +27,31 @@ Install [Babel](https://babeljs.io/) and it's loader
   * npm install grunt-babel --save-dev 
   * npm install lodash --save-dev 
   * npm install babel-plugin-lodash babel-cli babel-preset-es2015 --save-dev 
+
+### Config File
+```
+webpack: {
+            babel: {
+               entry: "./entry.js",
+                output: {
+                    path: "./src/j/",
+                    filename: "output.js"
+                },
+                module: {
+                    loaders: [{
+                        test: /\.js$/,
+                        exclude: /(node_modules|bower_components)/,
+                        loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
+                        query: {
+                            //plugins: ['transform-runtime']  //https://babeljs.io/docs/plugins/transform-runtime/
+                            presets: ['es2015'],
+                        }
+                    }]
+                }
+            }
+        }
+```
   
 
 ## License
-Copyright (c) 2012-2014 Tobias Koppers @sokra
 Licensed under the MIT license.
