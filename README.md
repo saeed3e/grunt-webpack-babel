@@ -19,41 +19,14 @@ grunt --version
 ```
 
 ### Second step
-Intall [webpack](https://webpack.github.io/) by command
 ```
-npm install webpack --save-dev
+run  npm install
 ```
 
 ### Third step
-Install [Babel](https://babeljs.io/) and it's loader
-```
-   npm install grunt-babel --save-dev 
-   npm install lodash --save-dev 
-   npm install babel-plugin-lodash babel-cli babel-preset-es2015 --save-dev 
-```
 
-### Config File
 ```
-webpack: {
-            babel: {
-               entry: "./entry.js",
-                output: {
-                    path: "./src/j/",
-                    filename: "output.js"
-                },
-                module: {
-                    loaders: [{
-                        test: /\.js$/,
-                        exclude: /(node_modules|bower_components)/,
-                        loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
-                        query: {
-                            //plugins: ['transform-runtime']  //https://babeljs.io/docs/plugins/transform-runtime/
-                            presets: ['es2015'],
-                        }
-                    }]
-                }
-            }
-        }
+execute grunt-webpack
 ```
   
 
