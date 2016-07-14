@@ -1,4 +1,6 @@
 {
+  "name": "grunt-webpack-babel",
+  "description": "Grunt plugin for webpack(module bundler) with babel ",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
@@ -8,10 +10,10 @@
     "grunt": "^1.0.1",
     "grunt-babel": "^6.0.0",
     "grunt-config-merge": "^1.2.0",
-    "grunt-contrib-jshint": "^1.0.0",
     "grunt-webpack": "^1.0.11",
     "lodash": "^4.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "license": "MIT"
 }
