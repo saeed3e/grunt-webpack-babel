@@ -7,8 +7,6 @@ Use [webpack](https://github.com/webpack/webpack) with grunt.
 Setup [grunt] (http://gruntjs.com) by following command
 ```
    npm install -g grunt-cli
-   npm install grunt --save-dev
-   npm install grunt-contrib-jshint --save-dev
 ```
 
 then add [Gruntfile.js](http://gruntjs.com/getting-started) file
